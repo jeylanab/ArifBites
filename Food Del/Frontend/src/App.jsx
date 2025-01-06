@@ -1,7 +1,9 @@
 import React from 'react'
 import { NavBar } from './components/NavBar/NavBar'
 import { Route, Routes } from 'react-router-dom'
-import { Cart } from './pages/Cart/Cart'
+import   {Cart} from './pages/Cart/Cart.jsx'
+import  Home  from './pages/Home/Home.jsx'
+import PlaceOrder  from './pages/PlaceOrder/PlaceOrder.jsx'
 
 
 const App = () => {
@@ -10,8 +12,8 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/place-order" element={< Cart/>} />
-        <Route path="/cart" element={<PlaceOrder />} />
+        <Route path="/place-order" element={<PlaceOrder />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
         
     </div>
