@@ -1,6 +1,6 @@
 import React from 'react'
 import './FoodItem.css';
-import * as assets from '../../assets/assets';
+import {assets} from '../../assets/assets';
 
 
 const FoodItem = ({id, name, price, description, image}) => {
@@ -20,5 +20,5 @@ const FoodItem = ({id, name, price, description, image}) => {
       </div>
   )
 }
-
+ 
 export default FoodItem
